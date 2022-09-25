@@ -1,0 +1,7 @@
+#https://github.com/prasanthbangs2016/tf-module-vpc.git
+#https is not needed
+#https://www.terraform.io/language/modules/sources
+
+vpc:
+    source:  "github.com/prasanthbangs2016/tf-module-vpc.git"
+    version: "main"
