@@ -3,5 +3,5 @@
 #https://www.terraform.io/language/modules/sources
 
 vpc:
-    source:  "github.com/prasanthbangs2016/tf-module-vpc.git"
+    source:  "github.com/prasanthbangs2016/tf-module-vpc"
     version: "main"
