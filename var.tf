@@ -1,2 +1,2 @@
-#this value comes from dev-backend.tfvars(VPC_CIDR)
-variable "VPC_CIDR" {}
+#this value comes from dev-backend.tfvars(vpc_cidr_block)
+variable "vpc_cidr_block" {}
