@@ -5,6 +5,4 @@ variable "subnets" {}
 
 variable "env" {}
 
-variable "AZ" {
-  
-}
+variable "AZ" {}
