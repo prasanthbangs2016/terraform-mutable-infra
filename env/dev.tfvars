@@ -3,19 +3,19 @@ vpc_cidr_block = "10.100.0.0/16"
 subnets = {
     public = {
         name = "public"
-        subnet_cidr = ["10.100.0.0/24", "100.100.1.0/24"]
+        subnet_cidr = ["10.100.0.0/24", "100.100.10.0/24"]
         
     }
 
     apps = {
         name = "apps-private"
-        subnet_cidr = ["10.100.2.0/24", "100.100.3.0/24"]
+        subnet_cidr = ["10.100.2.0/24", "100.100.30.0/24"]
         
     }
 
      db = {
         name = "db-private"
-        subnet_cidr = ["10.100.4.0/24", "100.100.5.0/24"]
+        subnet_cidr = ["10.100.4.0/24", "100.100.50.0/24"]
        
     }
 }
