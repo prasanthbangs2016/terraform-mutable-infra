@@ -29,4 +29,5 @@ subnets = {
 
 env = "dev"
 AZ  = ["us-east-1a", "us-east-1b"]
+default_vpc_id = "vpc-0d700cd99bff56764"
 
