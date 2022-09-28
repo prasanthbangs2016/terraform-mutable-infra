@@ -7,3 +7,8 @@ module "vpc" {
 }
 
 
+output "out" {
+    value = module.vpc.out
+  
+}
+
