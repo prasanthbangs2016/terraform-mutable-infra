@@ -7,9 +7,9 @@ subnets = {
         #256 ips /24
         subnet_cidr = ["10.100.0.0/24", "10.100.1.0/24"]
         #since it is public subnet hence internet gateway is set to true
-        #igw         = true
+        igw         = true
         #since it is structured data hence we are saying natgateway is false
-        #ngw         = false
+        ngw         = false
         
     }
 
@@ -17,8 +17,8 @@ subnets = {
         name = "apps-private"
         subnet_cidr = ["10.100.2.0/24", "10.100.3.0/24"]
       #since it is private subnet hence nat gateway is set to true
-        #ngw         = true
-        #igw         = false
+        ngw         = true
+        igw         = false
         
     }
 
@@ -26,8 +26,8 @@ subnets = {
         name = "db-private"
         subnet_cidr = ["10.100.4.0/24", "10.100.5.0/24"]
        #since it is private subnet hence nat gateway is set to true
-        #ngw         = true
-        #igw         = false
+        ngw         = true
+        igw         = false
        
     }
 }
