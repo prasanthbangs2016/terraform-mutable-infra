@@ -14,7 +14,7 @@ subnets = {
     }
 
     apps = {
-        name = "apps-private"
+        name = "apps"
         subnet_cidr = ["10.100.2.0/24", "10.100.3.0/24"]
       #since it is private subnet hence nat gateway is set to true
         ngw         = true
@@ -23,7 +23,7 @@ subnets = {
     }
 
      db = {
-        name = "db-private"
+        name = "db"
         subnet_cidr = ["10.100.4.0/24", "10.100.5.0/24"]
        #since it is private subnet hence nat gateway is set to true
         ngw         = true
