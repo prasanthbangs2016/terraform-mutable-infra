@@ -9,7 +9,7 @@ module "vpc" {
     default_route_table_id = var.default_route_table_id
 }
 
-module "doc-db" {
+module "docdb" {
     source = "./vendor/modules/doc-db"
     env     = var.env
     engine_version = var.engine_version
