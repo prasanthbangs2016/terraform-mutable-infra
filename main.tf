@@ -32,5 +32,5 @@ module "vpc" {
 #    apps_subnet_ids = module.vpc.out["apps"].id
 #}
 output "out" {
-    value = module.vpc.out.id
+    value = module.vpc.out
 }
