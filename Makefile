@@ -1,5 +1,4 @@
 dev:
-    git pull
 	rm -rf .terraform
 	terrafile 
 	terraform init -backend-config=env/dev-backend.tfvars
@@ -7,7 +6,6 @@ dev:
 
 
 prod:
-    git pull
 	rm -rf .terraform
 	terrafile 
 	terraform init -backend-config=env/prod-backend.tfvars
