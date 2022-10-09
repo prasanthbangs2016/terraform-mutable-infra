@@ -1,3 +1,4 @@
+#vpc
 vpc_cidr_block = "10.100.0.0/16"
 
 #subnets are multiple hence map
@@ -37,4 +38,9 @@ AZ  = ["us-east-1a", "us-east-1b"]
 default_vpc_id = "vpc-002e2deffd048729c"
 default_vpc_cidr = "172.31.0.0/16"
 default_route_table_id = "rtb-0c74baf4fd12941aa"
+
+#docdb(mongodb)
+
+engine_version  "4.0"
+
 
