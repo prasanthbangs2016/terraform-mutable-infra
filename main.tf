@@ -10,7 +10,7 @@ module "vpc" {
 }
 
 module "docdb" {
-    source = "./vendor/modules/doc-db"
+    source = "./vendor/modules/docdb"
     env     = var.env
     engine_version = var.engine_version
     apps_subnet_ids = local.apps_subnet_ids
