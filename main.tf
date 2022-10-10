@@ -49,6 +49,6 @@ module "docdb" {
 #
 #}
 
-output "out" {
-    value = module.vpc.subnets["apps"]["out"][*].id
-}
+#output "out" {
+#    value = module.vpc.subnets["apps"]["out"][*].id
+#}
