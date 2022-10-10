@@ -7,10 +7,15 @@
 #    value = module.vpc.out["apps"]["out"][*].id
 #}
 
+output "out" {
+    value = module.vpc.subnets["apps"]["out"][*].id
+}
+
 
 #locals {
 #  apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
 #}
+
 
 locals {
   apps_subnets_id = module.vpc.subnets["apps"]["out"][*].id
