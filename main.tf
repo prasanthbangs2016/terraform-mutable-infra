@@ -60,7 +60,7 @@ module "vpc" {
 #}
 
 output "out" {
-    value = module.vpc.out
+    value = module.vpc.out.vpc_id
 }
 
 #output "out" {
