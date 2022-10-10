@@ -7,9 +7,7 @@
 #    value = module.vpc.out["apps"]["out"][*].id
 #}
 
-output "out" {
-    value = module.vpc.subnets["apps"]["out"][*].id
-}
+
 
 
 #locals {
