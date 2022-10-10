@@ -41,6 +41,9 @@ default_route_table_id = "rtb-0c74baf4fd12941aa"
 
 #docdb(mongodb)
 
-engine_version  = "4.0"
+engine_version  = "4.0.0"
+docdb_cluster_instance_count = 1
+instance_class               = "db.t3.medium"
+
 
 
