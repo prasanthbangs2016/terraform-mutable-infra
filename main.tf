@@ -9,18 +9,18 @@ module "vpc" {
     default_route_table_id = var.default_route_table_id
 }
 
-module "docdb" {
-    source = "./vendor/modules/docdb"
-    env     = var.env
-    engine_version = var.engine_version
-    apps_subnet_ids = local.apps_subnet_ids
-    vpc_id          = module.vpc.id
-    vpc_cidr_block  = var.vpc_cidr_block
-#    instance_count  = var.docdb_cluster_instance_count
-    #docdb_instance_class = var.instance_class
-
-
-}
+#module "docdb" {
+#    source = "./vendor/modules/docdb"
+#    env     = var.env
+#    engine_version = var.engine_version
+#    apps_subnet_ids = local.apps_subnet_ids
+#    vpc_id          = module.vpc.id
+#    vpc_cidr_block  = var.vpc_cidr_block
+##    instance_count  = var.docdb_cluster_instance_count
+#    #docdb_instance_class = var.instance_class
+#
+#
+#}
 
 
 #output "out" {
@@ -53,17 +53,17 @@ module "docdb" {
 #    value = module.vpc.subnets["apps"]["out"][*].id
 #}
 
-locals {
-    apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
-    db_subnet_ids = module.vpc.out["db"]["out"][*].id
-    public_subnet_ids = module.vpc.out["public"]["out"][*].id
-}
-
-#output "out" {
-#    value = module.vpc.out
+#locals {
+#    apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
+#    db_subnet_ids = module.vpc.out["db"]["out"][*].id
+#    public_subnet_ids = module.vpc.out["public"]["out"][*].id
 #}
 
 output "out" {
-    value = local.apps_subnet_ids
+    value = module.vpc.out
 }
+
+#output "out" {
+#    value = local.apps_subnet_ids
+#}
 
