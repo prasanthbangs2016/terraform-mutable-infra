@@ -60,10 +60,11 @@ module "vpc" {
 #}
 
 output "out" {
-    value = module.vpc.vpc_id
+    value = module.vpc.out["apps"]["out"][*].vpc_id
 }
 
 #output "out" {
 #    value = local.apps_subnet_ids
 #}
+
 
