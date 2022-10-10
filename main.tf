@@ -54,9 +54,9 @@ module "docdb" {
 #}
 
 locals {
-    apps_subnet_ids = module.vpc.subnet["apps"]["out"][*].id
-    db_subnet_ids = module.vpc.subnet["db"]["out"][*].id
-    public_subnet_ids = module.vpc.subnet["public"]["out"][*].id
+    apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
+    db_subnet_ids = module.vpc.out["db"]["out"][*].id
+    public_subnet_ids = module.vpc.out["public"]["out"][*].id
 }
 
 #output "out" {
