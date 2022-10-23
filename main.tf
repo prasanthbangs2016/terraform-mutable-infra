@@ -9,18 +9,18 @@ module "vpc" {
     default_route_table_id = var.default_route_table_id
 }
 
-module "docdb" {
-    source = "./vendor/modules/docdb"
-    env     = var.env
-    engine_version = var.engine_version
-    apps_subnet_ids = local.apps_subnet_ids
-    vpc_id          = local.vpc_id
-    vpc_cidr_block  = var.vpc_cidr_block
-#    instance_count  = var.docdb_cluster_instance_count
-    #docdb_instance_class = var.instance_class
+# module "docdb" {
+#     source = "./vendor/modules/docdb"
+#     env     = var.env
+#     engine_version = var.engine_version
+#     apps_subnet_ids = local.apps_subnet_ids
+#     vpc_id          = module.vpc.vpc_id
+#     vpc_cidr_block  = var.vpc_cidr_block
+# #    instance_count  = var.docdb_cluster_instance_count
+#     #docdb_instance_class = var.instance_class
 
 
-}
+# }
 
 
 #output "out" {
