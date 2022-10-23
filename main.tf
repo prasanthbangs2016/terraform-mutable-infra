@@ -23,14 +23,14 @@ module "vpc" {
 # }
 
 
-#output "out" {
-#    value = module.vpc.out
-#
-#}
-
 output "out" {
-   value = module.vpc.out
+   value = module.vpc.out.id
+
 }
+
+# output "out" {
+#    value = module.vpc.out
+# }
 
 #(var.subnet_ids["${var.name}"].out[*].id)
 
