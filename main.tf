@@ -28,9 +28,9 @@ module "vpc" {
 #
 #}
 
-#output "out" {
-#    value = module.vpc.out
-#}
+output "out" {
+   value = module.vpc.out
+}
 
 #(var.subnet_ids["${var.name}"].out[*].id)
 
@@ -64,8 +64,8 @@ module "vpc" {
 #    value = module.vpc.out["apps"]["out"][*].vpc_id
 #}
 
-output "out" {
-    value = local.apps_subnet_ids
-}
+# output "out" {
+#     value = local.apps_subnet_ids
+# }
 
 
