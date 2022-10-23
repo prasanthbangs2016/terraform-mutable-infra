@@ -53,12 +53,12 @@ module "vpc" {
 #    value = module.vpc.subnets["apps"]["out"][*].id
 #}
 
-locals {
-    apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
-    db_subnet_ids = module.vpc.out["db"]["out"][*].id
-    public_subnet_ids = module.vpc.out["public"]["out"][*].id
-    vpc_id          = module.vpc.out["apps"]["out"][*].vpc_id
-}
+# locals {
+#     apps_subnet_ids = module.vpc.out["apps"]["out"][*].id
+#     db_subnet_ids = module.vpc.out["db"]["out"][*].id
+#     public_subnet_ids = module.vpc.out["public"]["out"][*].id
+#     vpc_id          = module.vpc.out["apps"]["out"][*].vpc_id
+# }
 
 #output "vpc" {
 #    value = module.vpc.out["apps"]["out"][*].vpc_id
